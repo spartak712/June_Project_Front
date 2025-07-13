@@ -13,3 +13,4 @@ class BaseTest:
         #request.cls.browser = driver_fixture
         request.cls.start_page = StartPage(driver_fixture)
         request.cls.element_page = ElementPage(driver_fixture)
+        #x
