@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  tests:
+    image: june_project_front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    command: /bin/sh -c "pytest -s -v --cache-clear"
+    working_dir: /app
